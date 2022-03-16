@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
+import os
 from pathlib import Path
 #from users.models import CustomUser
 
@@ -34,6 +35,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     # My apps.
     'users',
+    'pages',
 
     # Django default apps.
     'django.contrib.admin',
@@ -59,7 +61,7 @@ ROOT_URLCONF = 'paintingstore_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [str(BASE_DIR.joinpath('templates'))],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
