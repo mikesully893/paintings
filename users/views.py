@@ -4,9 +4,9 @@ from django.views import generic
 
 from .forms import CustomUserCreationForm
 
-class RegistrationPageView(generic.CreateView):
+class SignUpPageView(generic.CreateView):
     form_class = CustomUserCreationForm
     success_url = reverse_lazy('login')
-    template_name = 'register.html'
+    template_name = 'signup.html'
 
 
