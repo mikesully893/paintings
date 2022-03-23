@@ -1,0 +1,11 @@
+{% extends '_base.html' %}
+
+{% block title %}Paintings{% endblock title %}
+
+{% block content %}
+    {% for painting in painting_list %}
+        <div>
+            <h2><a href="{{ painting.get_absolute_url }}">{{ painting.title }}</a></h2>
+        </div>
+    {% endfor %}
+{% endblock content %}

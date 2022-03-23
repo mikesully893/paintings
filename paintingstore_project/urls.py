@@ -25,5 +25,7 @@ urlpatterns = [
 
     # Local apps
     path('', include('pages.urls')),
+    path('paintings/', include('paintings.urls')),
+
 
 ]

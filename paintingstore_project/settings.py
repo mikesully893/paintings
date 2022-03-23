@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     # My apps.
     'users',
     'pages',
+    'paintings',
 
     # Third party.
     'crispy_forms',
@@ -176,3 +177,5 @@ ACCOUNT_AUTHENTICATION_METHOD = 'email'
 ACCOUNT_EMAIL_REQUIRED = True
 
 ACCOUNT_UNIQUE_EMAIL = True
+
+DEFAULT_FROM_EMAIL = 'admin@artstore.com'
