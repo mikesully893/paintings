@@ -1,6 +1,15 @@
 h1 {
+    color: blue;
+}
+
+.red {
     color: red;
 }
+
+.bordered-container {
+    border: 1px solid black;
+    height: 100px;
+    overflow: hidden;}
 
 .bookcover {
     height: 200px;
