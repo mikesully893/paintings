@@ -5,7 +5,8 @@
 {% block content %}
   <div class="painting-detail">
     {% if painting.image %}
-      <img class="painting" src="{{ painting.image.url }}" alt="{{ painting.title }}">
+      <img class="painting" style="border:1px solid gray;"
+           src="{{ painting.image.url }}" alt="{{ painting.title }}">
     {% endif %}
     <h3><a href="">{{ painting.title }}</a></h3>
     <p>Artist: {{ painting.artist }}</p>

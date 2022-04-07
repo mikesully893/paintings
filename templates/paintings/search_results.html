@@ -2,15 +2,19 @@
 
 {% load thumbnail %}
 
-{% block title %}Paintings{% endblock title %}
+{% block title %}Search{% endblock title %}
 
 {% block content %}
-    {% for painting in painting_list %}
-        {% thumbnail painting.image "x300" as im %}
+<h1>Search Results</h1>
+
+{% for painting in painting_list %}
+    {% thumbnail painting.image "x300" as im %}
+        <div>
             <h2><a href="{{ painting.get_absolute_url }}">{{ painting.title }}</a></h2>
             <img style="border:1px solid gray;" src="{{ im.url }}">
             <p>Artist: {{ painting.artist }}</p>
             <p>Price: {{ painting.price }}</p>
-        {% endthumbnail %}
-    {% endfor %}
+        </div>
+    {% endthumbnail %}
+{% endfor %}
 {% endblock content %}
