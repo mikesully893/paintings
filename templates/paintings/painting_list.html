@@ -7,10 +7,10 @@
 {% block content %}
     {% for painting in painting_list %}
         {% thumbnail painting.image "x300" as im %}
-            <h2><a href="{{ painting.get_absolute_url }}">{{ painting.title }}</a></h2>
+            <h3><a href="{{ painting.get_absolute_url }}">{{ painting.title }}</a></h3>
             <img style="border:1px solid gray;" src="{{ im.url }}">
             <p>Artist: {{ painting.artist }}</p>
-            <p>Price: {{ painting.price }}</p>
+            <p>Price: €{{ painting.price }}</p>
         {% endthumbnail %}
     {% endfor %}
 {% endblock content %}

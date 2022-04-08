@@ -10,6 +10,20 @@ class PaintingListView(ListView):
     template_name = 'paintings/painting_list.html'
 
 
+class AcrylicListView(ListView):
+    model = Painting
+    Painting.artwork_type = 'acrylic'
+    context_object_name = 'acrylic_list'
+    template_name = 'paintings/acrylic_list.html'
+
+
+class ResinListView(ListView):
+    model = Painting
+    Painting.artwork_type = 'resin'
+    context_object_name = 'resin_list'
+    template_name = 'paintings/resin_list.html'
+
+
 class PaintingDetailView(DetailView):
     model = Painting
     context_object_name = 'painting'

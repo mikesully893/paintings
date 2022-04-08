@@ -10,6 +10,7 @@ class Painting(models.Model):
     title = models.CharField(max_length=200)
     artist = models.CharField(max_length=200)
     price = models.DecimalField(max_digits=6, decimal_places=2)
+    artwork_type = models.CharField(max_length=200, default='painting')
     image = models.ImageField(upload_to='images/', blank=True)
 
     class Meta:

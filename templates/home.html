@@ -4,19 +4,15 @@
 {% block title %}Home{% endblock title %}
 
 {% block content %}
-<h1>Homepage</h1>
-<img class="bookcover" src="{% static 'images/welcome.jpg' %}">
-{% if user.is_authenticated %}
-    Hi {{ user.email }}!
-    <p><a href="{% url 'account_logout' %}">Log Out</a></p>
-{% else %}
-    <p>You are not logged in</p>
-    <a href="{% url 'account_login' %}">Log In</a>
-    <a href="{% url 'account_signup' %}">Sign Up</a>
-{% endif %}
-<form class="form-inline mt-2 mt-md-0" action="{% url 'search_results' %}"
-method="get">
-    <input name="q" class="form-control mr-sm-2" type="text" placeholder="Search"
-    aria-label="Search">
-</form>
+<div class="jumbotron">
+  <h1 class="display-3">Welcome to the Art Cottage!</h1>
+  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for
+                  calling extra attention to featured content or information.</p>
+  <hr class="my-2">
+  <p>It uses utility classes for typography and
+     spacing to space content out within the larger container.</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="{% url 'painting_list' %}" role="button">Shop now</a>
+  </p>
+</div>
 {% endblock content %}
