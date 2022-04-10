@@ -10,7 +10,7 @@
     {% endif %}
     <h3><a href="">{{ painting.title }}</a></h3>
     <p>Artist: {{ painting.artist }}</p>
-    <p>Price: {{ painting.price }}</p>
+    <p>Price: €{{ painting.price }}</p>
     <a href="{% url 'orders' %}" class="btn btn-success" >Buy</a>
   </div>
 {% endblock content %}
