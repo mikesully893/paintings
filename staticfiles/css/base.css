@@ -1,10 +1,33 @@
-h1 {
+ {
+    color: blue;
+}
+
+.red {
     color: red;
 }
 
-
+.bordered-container {
+    border: 1px solid black;
+    height: 100px;
+    overflow: hidden;}
 
 .bookcover {
-    height: 300px;
+    height: 200px;
     width: auto;
 }
+
+.carousel-control-prev {
+    background-color: rgba(0,0,0,.8);
+}
+
+.carousel-control-next {
+    background-color: rgba(0,0,0,.8);
+}
+
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{   }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}
+
