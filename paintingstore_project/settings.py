@@ -64,7 +64,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CSRF_TRUSTED_ORIGINS = ['https://theartcottage.herokuapp.com',]
+CSRF_TRUSTED_ORIGINS = ['https://theartcottage.herokuapp.com', 'https://localhost']
 
 ROOT_URLCONF = 'paintingstore_project.urls'
 
