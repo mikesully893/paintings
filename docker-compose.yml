@@ -10,10 +10,6 @@ services:
       - DEBUG=0
       - STRIPE_TEST_PUBLISHABLE_KEY=pk_test_51KhE7JFk1dAJN872VnNlKqSkU91ja5pliiNwbPSe4mNsb6IJNI6qbHJjltngNFYPDK1882vnNAmtoH9VDFjiCtTa00dQhghSdj
       - STRIPE_TEST_SECRET_KEY=sk_test_51KhE7JFk1dAJN8722yWI3NiiuqXiHoSwjuneK2t17zoB5xsFfoKUZTDG7MOlIpgk2viK7D3DwGmzxulbwNAZorxU00OAxmxXBj
-      - USE_S3=1
-      - AWS_ACCESS_KEY_ID=AKIAQKCXIBAGIITIS7IR
-      - AWS_SECRET_ACCESS_KEY=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
-      - AWS_STORAGE_BUCKET_NAME=django-static-paintings-1001
     volumes:
       - .:/code
     ports:
