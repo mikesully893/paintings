@@ -13,7 +13,7 @@ class Painting(models.Model):
     artist = models.CharField(max_length=200)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     artwork_type = models.CharField(max_length=200, default='acrylic')
-    image = models.ImageField(upload_to='images/', blank=True, storage=PublicMediaStorage())
+    image = models.ImageField(upload_to='images/', blank=True)
 
     class Meta:
         permissions = [
