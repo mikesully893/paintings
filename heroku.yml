@@ -1,6 +1,8 @@
 setup:
   addons:
   - plan: heroku-postgresql
+  config:
+    S3_BUCKET: django-static-paintings-1001
 build:
   docker:
     web: Dockerfile
