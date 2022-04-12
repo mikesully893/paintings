@@ -2,7 +2,6 @@ import uuid
 from django.db import models
 from django.urls import reverse
 
-from paintingstore_project.storage_backends import PublicMediaStorage, StaticStorage
 
 class Painting(models.Model):
     id = models.UUIDField(
