@@ -150,11 +150,11 @@ AWS_S3_OBJECT_PARAMETERS = {'CacheControl': 'max-age=86400'}
 # s3 static settings
 AWS_LOCATION = 'static'
 STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{AWS_LOCATION}/'
-STATICFILES_STORAGE = 'storage_backends.StaticStorage'
+STATICFILES_STORAGE = 'paintingstore_project.storage_backends.StaticStorage'
 # s3 public media settings
 PUBLIC_MEDIA_LOCATION = 'media'
 MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{PUBLIC_MEDIA_LOCATION}/'
-DEFAULT_FILE_STORAGE = 'storage_backends.PublicMediaStorage'
+DEFAULT_FILE_STORAGE = 'paintingstore_project.storage_backends.PublicMediaStorage'
 
 
 
