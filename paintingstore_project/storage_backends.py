@@ -10,3 +10,4 @@ class StaticStorage(S3Boto3Storage):
 class PublicMediaStorage(S3Boto3Storage):
     location = settings.PUBLIC_MEDIA_LOCATION
     file_overwrite = False
+    default_acl = None
