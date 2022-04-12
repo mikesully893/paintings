@@ -156,7 +156,7 @@ STATICFILES_FINDERS = [
 ]
 AWS_MEDIA_LOCATION = 'media'
 MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{AWS_MEDIA_LOCATION}/'
-DEFAULT_FILE_STORAGE = 'paintingstore_project.mysite.storage_backends.MediaStorage'
+DEFAULT_FILE_STORAGE = 'paintingstore_project.storage_backends.MediaStorage'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
